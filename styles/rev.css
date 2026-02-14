@@ -5,3 +5,162 @@
     color: black;
 }
 
+body{
+    background-color: #efefef;
+    margin: 0rem;
+}
+
+header{
+    margin: 1rem;
+    margin-bottom: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    margin: 0rem;
+    font-size: 3rem;
+    font-family: Playfair Display;
+    color: blueviolet;
+}
+
+header h3{
+    font-size: 1.4rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}    
+
+main{
+    margin: 1rem;
+}
+
+main section.sec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+
+}
+
+main section.sec1 div.card{
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+    padding-top: 18rem;
+    margin: 0rem;
+    overflow: visible;
+
+}
+
+main section.sec1 div.card div.perfil{
+    position: absolute;
+    top: -10vh;;
+}
+
+main section.sec1 div.card div.perfil img{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main section.sec1 h2{
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: rgb(61, 177, 181);
+}
+
+main section.sec1 p{
+    margin: 0rem 2rem;
+    text-indent: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+main section.sec1 div{
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.sec1 div img.icon{
+    margin: 0.4rem;
+    width: 3vh;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h2{
+    margin: 1rem;
+    font-size: 1.7rem;
+}
+
+main section p{
+    margin: 0rem 1rem;
+    text-indent: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+main section button{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: blueviolet;
+    color: white;
+    border-style: solid;
+    border-color: rgb(84, 25, 139);
+}
+
+main section ul{
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;     
+}
+
+main section ul li{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div{
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div img.icon{
+    margin: 0.4rem;
+    width: 3vh;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    height: 10vh;
+}
+
+footer h5{
+    color: white;
+    font-size: 1rem;
+}
