@@ -10,9 +10,8 @@ body{
     margin: 0rem;
 }
 
-header{
+    header{
     margin: 1rem;
-    margin-bottom: 5.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,62 +37,60 @@ main{
 
 main section.sec1{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-
+    position: relative;
+    width: auto;
+    height: auto;
 }
 
 main section.sec1 div.card{
-    position: relative;
     display: flex;
-    justify-content: center;    
-    align-items: center;
     flex-direction: column;
-    padding-top: 18rem;
+    justify-content: center;
+    align-items: center;
     margin: 0rem;
-    overflow: visible;
-
 }
 
-main section.sec1 div.card div.perfil{
-    position: absolute;
-    top: -10vh;;
-}
-
-main section.sec1 div.card div.perfil img{
+main section.sec1 div.card img.foto{
     width: 40vh;
-    height: 40vh;
+    margin: 1rem;
     border-radius: 50%;
     object-fit: cover;
+    top: 1rem;
 }
 
-main section.sec1 h2{
+main section.sec1 div.card h2{
     margin: 1rem;
     font-size: 1.5rem;
     color: rgb(61, 177, 181);
 }
 
-main section.sec1 p{
+main section.sec1 div.card p{
     margin: 0rem 2rem;
     text-indent: 1rem;
     font-size: 1.2rem;
     text-align: justify;
 }
 
-main section.sec1 div{
+main section.sec1 div.card div{
     margin: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main section.sec1 div img.icon{
+main section.sec1 div.card div img.icon{
     margin: 0.4rem;
     width: 3vh;
+}
+
+main section.sec1 div.background{
+    background-color: white;
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    inset: 5rem -0.5rem -1rem -0.5rem;
 }
 
 main section{
@@ -120,8 +117,8 @@ main section button{
     padding: 0.5rem;
     font-size: 1.5rem;
     border-radius: 2rem;
-    background-color: blueviolet;
-    color: white;
+    background-color: none;
+    color: rgb(61, 177, 181);
     border-style: solid;
     border-color: rgb(84, 25, 139);
 }
@@ -158,9 +155,137 @@ footer{
     align-items: center;
     background-color: rgb(27, 27, 27);
     height: 10vh;
+    padding: 1rem;
 }
 
 footer h5{
     color: white;
-    font-size: 1rem;
+    font-size: 0.78rem;
+}
+
+
+@media (min-width: 1024px){
+
+    header h1{
+        font-size: 5rem;
+    }
+
+    header h3{
+        font-size: 2rem;
+    }   
+
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    main section.sec1{
+        width: 33.33%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 2rem;
+        margin-top: 0rem;
+    }
+     main section.sec1 div.card h2{
+        font-size: 2rem;
+        margin: 1rem;
+     }
+    
+    main section.sec1 div.card p{
+        font-size: 1.5rem;
+        margin: 0rem 2rem;
+        text-indent: 1rem;
+        text-align: justify;
+    }   
+     
+    main section.sec1 div.background{
+    background-color: white;
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    inset: 4rem -0.5rem -1rem -0.5rem;
+    }
+
+    main section.sec1 div.card img.foto{
+    width: 30vh;
+    margin: 0rem;
+    border-radius: 50%;
+    object-fit: cover;
+    top: 1rem;
+    }
+
+    main section.sec2{
+        width: 33.33%;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main section.sec2 h2{
+        margin: 1rem;
+        margin-bottom: 2rem;;
+        font-size: 2rem;
+    }
+
+    main section.sec2 p{
+        margin: 2rem 2rem;
+        text-indent: 1rem;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    main section.sec2 button{
+        margin: 2rem;
+        padding: 1rem;
+        font-size: 2rem;
+        border-radius: 3rem;
+        background-color: none;
+        color: rgb(61, 177, 181);
+        border-style: solid;
+        border-color: rgb(84, 25, 139);
+    }
+
+
+    main section.sec3{
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    main section.sec3 h2{
+        margin: 1rem;
+        margin-bottom: 0rem;
+        font-size: 2rem;
+    }
+
+    main section.sec3 ul{
+        margin: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    main section.sec3 ul li{
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    main section div img.icon{
+        width: 2.5rem;
+    }
+
+
+    footer h5{
+        font-size: 1.5rem;
+    }
+
+
 }
