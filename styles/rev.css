@@ -22,7 +22,7 @@ header h1{
     margin: 0rem;
     font-size: 3rem;
     font-family: Playfair Display;
-    color: blueviolet;
+    color: rgb(84, 25, 139);
 }
 
 header h3{
@@ -117,10 +117,18 @@ main section button{
     padding: 0.5rem;
     font-size: 1.5rem;
     border-radius: 2rem;
-    background-color: none;
     color: rgb(61, 177, 181);
     border-style: solid;
     border-color: rgb(84, 25, 139);
+}
+
+main section button:hover{
+    background-color: rgb(61, 177, 181);
+    border-color: rgb(84, 25, 139);
+    color: rgb(84, 25, 139);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 main section ul{
@@ -142,6 +150,12 @@ main section div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main section div img.icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer ;
 }
 
 main section div img.icon{
@@ -177,20 +191,34 @@ footer h5{
     main{
         display: flex;
         flex-direction: row-reverse;
+        align-items: stretch;
+        gap: 1rem;
     }
 
+    main section{
+        flex: 1 1 0;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    main section div img.icon{
+        width: 2.5rem;
+        margin-top: 0rem;
+    }
+
+
     main section.sec1{
-        width: 33.33%;
         height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin: 2rem;
-        margin-top: 0rem;
+        margin: 0rem 2rem 2rem 0rem;
     }
      main section.sec1 div.card h2{
         font-size: 2rem;
-        margin: 1rem;
+        margin: 0.5rem;
      }
     
     main section.sec1 div.card p{
@@ -207,7 +235,7 @@ footer h5{
     z-index: -1;
     width: auto;
     height: auto;
-    inset: 4rem -0.5rem -1rem -0.5rem;
+    inset: 6rem -0.5rem -0.5rem -0.5rem;
     }
 
     main section.sec1 div.card img.foto{
@@ -219,8 +247,7 @@ footer h5{
     }
 
     main section.sec2{
-        width: 33.33%;
-        margin: 1rem;
+        margin: 0rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -250,13 +277,19 @@ footer h5{
         border-color: rgb(84, 25, 139);
     }
 
+    main section button:hover{
+    background-color: rgb(61, 177, 181);
+    border-color: rgb(84, 25, 139);
+    color: rgb(84, 25, 139);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
 
     main section.sec3{
-        width: 33.33%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
     }
 
     main section.sec3 h2{
@@ -276,10 +309,6 @@ footer h5{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-    }
-
-    main section div img.icon{
-        width: 2.5rem;
     }
 
 
